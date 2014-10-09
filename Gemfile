@@ -28,6 +28,17 @@ gem 'spring',        group: :development
 
 gem 'devise'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'pry-rails'
+  gem 'launchy'
+  gem 'orderly'
+  gem 'factory_girl_rails'
+  gem 'dotenv-rails'
+  gem 'faker'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
