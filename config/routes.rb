@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   devise_scope :user do
-    root to: "devise/sessions#new"
+    root to: "user_books#index"
   end
 
   resources :user_books
