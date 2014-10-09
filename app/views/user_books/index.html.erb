@@ -1,0 +1,6 @@
+<h2> Books for Sale </h2>
+<ul>
+<% @user_books.each do |book| %>
+  <li><%= book.title %>
+  <br><%= book.author %> - seller: <%= book.user.username %><br></li>
+<% end %>
