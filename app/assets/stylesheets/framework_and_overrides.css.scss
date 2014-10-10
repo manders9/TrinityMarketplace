@@ -2,7 +2,12 @@
 @import "foundation";
 
 .top-bar {
-  background-color: rgba(0, 32, 71, 0.9);
+  background-color: #002047;
+}
+
+.top-bar-section .has-form {
+  background-color: #002047;
+  display: block;
 }
 
 // override for the 'Home' navigation link
