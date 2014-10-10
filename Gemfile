@@ -31,6 +31,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -41,6 +42,10 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'dotenv-rails'
   gem 'faker'
+end
+
+group :development do
+  gem 'rails_layout'
 end
 
 # Use ActiveModel has_secure_password
