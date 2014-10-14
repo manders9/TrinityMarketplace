@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 class ProfilePhotoUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
@@ -27,7 +26,7 @@ class ProfilePhotoUploader < CarrierWave::Uploader::Base
   # end
 
   # Process files as they are uploaded:
-process :resize_and_pad => [100, 100, background=:transparent, gravity=:center]
+process resize_and_pad: [100, 100, background = :transparent, gravity = :center]
   #
   # def scale(width, height)
   #   # do something
@@ -49,5 +48,4 @@ process :resize_and_pad => [100, 100, background=:transparent, gravity=:center]
   # def filename
   #   "something.jpg" if original_filename
   # end
-
 end
