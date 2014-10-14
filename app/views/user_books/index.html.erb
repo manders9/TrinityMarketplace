@@ -1,0 +1,9 @@
+<h2> Books for Sale </h2>
+
+<%= link_to "List a Book", new_user_book_path %>
+
+<ul>
+<% @user_books.each do |book| %>
+  <li><%= book.title %>
+  <br><%= book.author %> - seller: <%= book.user.username %><br></li>
+<% end %>

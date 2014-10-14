@@ -1,12 +1,15 @@
+<div class="authform">
 <h2>Resend unlock instructions</h2>
 
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+  <p>We'll resend unlock instructions.</p>
   <%= devise_error_messages! %>
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
-
-  <div><%= f.submit "Resend unlock instructions" %></div>
+  <div class="form-group">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+  </div>
+    <%= f.submit "Resend unlock instructions", class: 'button right' %></div>
 <% end %>
+</div>
 
 <%= render "devise/shared/links" %>
