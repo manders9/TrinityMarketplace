@@ -15,7 +15,8 @@
 /log/*.log
 /tmp
 
-/config/initializers
+/config/initializers/devise.rb
+/config/initializers/carrierwave.rb
 
 +# Ignore uploaded files in test/development
 +/public/uploads
