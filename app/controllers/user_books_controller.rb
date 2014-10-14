@@ -21,7 +21,7 @@ class UserBooksController < ApplicationController
 
       # UserMailer.book_email(@user_book).deliver
     else
-      render "new"
+      render :new
     end
   end
 
@@ -54,7 +54,8 @@ class UserBooksController < ApplicationController
       :user,
       :title,
       :author,
-      :condition
+      :condition,
+      :price
       ).merge(user: current_user)
   end
 end
