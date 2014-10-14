@@ -32,6 +32,9 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
 gem 'foundation-rails'
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'rspec-rails'

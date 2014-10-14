@@ -20,6 +20,10 @@
         <%= f.text_field :author %>
       </div>
       <div>
+        <label><%= f.label :price %></label>
+        <%= f.number_field :price, hint: "prices should be in USD" %>
+      </div>
+      <div>
         <label><%= f.label :condition %></label>
         <%= f.text_field :condition %>
       </div>

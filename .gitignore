@@ -16,3 +16,8 @@
 /tmp
 
 /config/initializers/devise.rb
+
++# Ignore uploaded files in test/development
++/public/uploads
+
+.env
