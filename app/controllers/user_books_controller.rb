@@ -19,7 +19,7 @@ class UserBooksController < ApplicationController
       redirect_to user_book_path(@user_book),
         notice: "Book successfully added."
 
-      #UserMailer.book_email(@user_book).deliver
+      # UserMailer.book_email(@user_book).deliver
     else
       render "new"
     end

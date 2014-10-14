@@ -7,11 +7,10 @@
     <%# if current_user.admin? %>
       <!-- <li class="divider"></li>
       <li class="has-form"> --><%#= link_to "View Users", admin_users_path %><!-- </li> -->
-    <%# end %>
+    <% end %>
     <% if current_user %>
       <li class="divider"></li>
       <li class="has-form"><%= link_to "User Profile", user_path(current_user) %></li>
-    <% end %>
     <li class="divider"></li>
     <li class="has-form"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
   <% end %>
