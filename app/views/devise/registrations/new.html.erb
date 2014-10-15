@@ -3,11 +3,18 @@
     <h3>Sign up</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
-      <%= f.label :email %>
-      <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+      <%= f.label :username, class: "left"  %>
+      <small class="right">Required</small>
+      <%= f.text_field :username, autofocus: true, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label :password %>
+      <%= f.label :email, class: "left" %>
+      <small class="right">Required</small>
+      <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+    </div>
+    <div class="form-group" "left">
+      <%= f.label :password, class: "left"  %>
+      <small class="right"><%= @minimum_password_length %> characters minimum</small>
       <%= f.password_field :password, class: 'form-control' %>
     </div>
     <div class="form-group">
