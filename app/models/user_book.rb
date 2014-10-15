@@ -5,4 +5,5 @@ class UserBook < ActiveRecord::Base
   validates :title, presence: true
   validates :author, presence: true
   validates :condition, presence: true
+  validates :price, presence: true
 end
