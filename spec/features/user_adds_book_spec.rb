@@ -27,8 +27,6 @@ feature "user creates a book listing", %{
     scenario "book successfully added" do
       book = FactoryGirl.build(:user_book, user: @user)
 
-      binding.pry
-
       visit new_user_book_path
 
       fill_in "Title", with: book.title
@@ -40,7 +38,7 @@ feature "user creates a book listing", %{
 
       click_on "Submit Book"
 
-      expect(page).to have_content "Book successfully created."
+      expect(page).to have_content "Book successfully added."
     end
 
     scenario "book creation fails due to missing fields" do
@@ -50,11 +48,24 @@ feature "user creates a book listing", %{
 
       click_on "Submit Book"
 
-      expect(page).to have_content "can't be blank"
+      expect(page).to have_content "Title can't be blank"
+      expect(page).to have_content "Author can't be blank"
+      expect(page).to have_content "Condition can't be blank"
+      expect(page).to have_content "Price can't be blank"
+    end
+  end
+
+  context "unauthenticated user" do
+    scenario "user cannot add a book" do
+      visit new_user_book_path
+
+      expect(page).to have_content
+      "You need to sign in or sign up before continuing."
     end
 
-    scenario "book creation fails due to incorrect price" do
-
+    scenario "user doesn't have access to List a Book button" do
+      visit user_books_path
+      expect(page).to_not have_button "List a Book"
     end
   end
 end
