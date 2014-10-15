@@ -11,20 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141010224435) do
+=======
+ActiveRecord::Schema.define(version: 20141014161753) do
+>>>>>>> e42d0d93994143d26cc142e57377036138bbafc5
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "user_books", force: true do |t|
-    t.integer  "user_id",     null: false
-    t.string   "title",       null: false
-    t.string   "author",      null: false
-    t.string   "condition",   null: false
+    t.integer  "user_id",                             null: false
+    t.string   "title",                               null: false
+    t.string   "author",                              null: false
+    t.string   "condition",                           null: false
     t.text     "description"
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "price",       precision: 8, scale: 2, null: false
   end
 
   add_index "user_books", ["user_id"], name: "index_user_books_on_user_id", using: :btree
@@ -43,6 +48,10 @@ ActiveRecord::Schema.define(version: 20141010224435) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "username",                            null: false
+<<<<<<< HEAD
+=======
+    t.string   "profile_photo"
+>>>>>>> e42d0d93994143d26cc142e57377036138bbafc5
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable,
          :validatable
   validates_uniqueness_of :username
+  mount_uploader :profile_photo, ProfilePhotoUploader
 end
