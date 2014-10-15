@@ -14,7 +14,6 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-
 module LogInHelper
   def sign_in_as(user)
     visit root_path

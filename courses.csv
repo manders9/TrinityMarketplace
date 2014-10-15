@@ -1,0 +1,216 @@
+catalog_id, department, title
+AHIS-101, Art History, Intro Hist of Art West I
+AHIS-103, Art History, Intro to Asian Art
+AHIS-105, Art History, History of World Cinema
+AHIS-202, Art History, Closer Look at Art and Architecture
+AHIS-207, Art History, The Arts of China
+AHIS-208, Art History, The Arts of Japan Hyland
+AHIS-223, Art History, Medieval Art and Architecture
+AHIS-246, Art History, Art in the Age of Absolutism
+AHIS-247, Art History, Architecture and Urbanism
+AHIS-252, Art History, 18 Century Art and Architecture
+AHIS-258, Art History, History of the Decorative Arts
+AHIS-261, Art History, 19th-Century Painting and Sculpture
+AHIS-282, Art History, 20th Century Avant Garde
+AHIS-283, Art History, Contemporary Art
+AHIS-286, Art History, Modern Architecture: 1900-Present
+AHIS-292, Art History, History of Photography
+AHIS-294, Art History, The Arts of Africa
+AHIS-301, Art History, Major Seminar Art History Methodology
+AHIS-361, Art History, Seminar 19th Cent Art: Impressionism
+AHIS-334, Art History, Patrons and Artists in Italian Renaissance
+AHIS-381, Art History, Seminar: Museum Issues
+AHIS-38, Art History, Sem: Picasso and Contemp. Art
+AMST-201, American Studies, American Identities
+AMST-203, American Studies, Conflicts and Cultures American Society
+AMST-208, American Studies, Comic Art and Culture in the U.S.
+AMST-210, American Studies, Doing Culture
+AMST-212, American Studies, Introduction to Disability Studies: Theory and History
+AMST-220, American Studies, The Child in American Culture
+AMST-227, American Studies, Blacks and American National Politics
+AMST-228, American Studies, Black Politics in Urban America
+AMST-248, American Studies, Female Bodies in 19th Century American Literature and Culture
+AMST-252, American Studies, From Civil Rights to Black Power
+AMST-254, American Studies, Ellison’s Invisible Man and the Black Modern Experience
+AMST-255, American Studies, American Icons
+AMST-258, American Studies, Law in United States Society
+AMST-263, American Studies, The American Civil Rights Movement
+AMST-270, American Studies, Multi-Ethnic Literatures of the United States
+AMST-275, American Studies, "The West in American Culture: Symbols, Myths, and Realities"
+AMST-279, American Studies, American Autobiography
+AMST-284, American Studies, Food and American Culture
+AMST-285, American Studies, Born in Blood: Violence and the Making of America
+AMST-289, American Studies, "Culture of Sports: Politics, Economics, Sociology"
+AMST-291, American Studies, Protest Movements in Modern America
+AMST-298, American Studies, Contemporary Issues in Hip-Hop Culture
+AMST-301, American Studies, Junior Seminar: American Texts
+AMST-302, American Studies, Junior Seminar II: Studies in American Culture
+AMST-309, American Studies, Music and Culture in the Postwar City
+AMST-323, American Studies, The Trouble With Normal: An Introduction to Queer Theory
+AMST-326, American Studies, Representations of Miscegenations
+AMST-329, American Studies, Viewing The Wire Through a Critical Lens
+AMST-331, American Studies, Politics and Society in 20th Century South
+AMST-332, American Studies, Credit and Crisis
+AMST-333, American Studies, Women of Color in the United States
+AMST-335, American Studies, The Play's the Thing: Staging Race in African American Theater and Drama
+AMST-336, American Studies, Globalization(s): "America" in the Modern World
+AMST-337, Sexual Labors in the United States
+AMST-340, American Studies, The Body in 19th Century American Culture
+AMST-341, American Studies, Spectacle of Disability in American Culture
+AMST-346, American Studies, "Sexuality, Nation, Race and Gender"
+AMST-347, American Studies, Issues and Controversies in Contemporary Black Life
+AMST-348, American Studies, Thought and Culture in American Society
+AMST-352, American Studies, The Culture of Cold War America
+AMST-355, American Studies, "Urban Mosaic: Migration, Identity, and Politics"
+AMST-357, American Studies, Race and Urban Space
+AMST-358, American Studies, "Voices of Freedom, Voices of Desperation: American Reformers, 1760-1960"
+AMST-359, American Studies, Violence in the American Imagination
+AMST-360, American Studies, "American Anthems: An Exploration in Music, Protest, and Culture"
+AMST-361, American Studies, Interpreting the American Dream
+AMST-374, American Studies, The 1960s and American Culture
+AMST-375, American Studies, Self and Society in American Culture
+AMST-380, American Studies, Vietnam War and American Culture
+AMST-380, American Studies, The Vietnam War and American Culture
+AMST-390, American Studies, "Born This Way: The Science of Sexual Orientation and Gender Identity, 1860s to the Present"
+AMST-409, American Studies, Senior Seminar
+AMST-416, American Studies, Culture and Politics in Mid-20th-Century America
+AMST-420, American Studies, The Prosperous Years 1900-1929
+AMST-421, American Studies, Nature and Health in American Culture
+AMST-423, American Studies, The History of American Sports
+AMST-424, American Studies, Comic Art in America 1895-Present
+AMST-425, American Studies, "Museums, Visual Cultural and Crital Theory"
+AMST-426, American Studies, Nuclear America
+AMST-427, American Studies, "Body Art in Fiction, Film, and Practice"
+AMST-428, American Studies, New England and the Black Atlantic
+AMST-431, American Studies, "Scribbling Women: American Women's Literary Culture, 1850-1920"
+AMST-435, American Studies, Museum Exhibition
+AMST-437, American Studies, Women and the American Preservation Movement
+AMST-438, American Studies, America Collects Itself
+AMST-439, American Studies, Nationalizing America, 1932-1960
+AMST-443, American Studies, "Spectacle, Social Control, and the Spaces of Display"
+AMST-449, American Studies, The Culture of Americanism in the 20th Century
+AMST-450, American Studies, "The Social Conscience and American Photography, 1839-1946"
+AMST-451, American Studies, The World of Rare Books
+AMST-453, American Studies, Agency and Agenda: Advertising the American Dream
+AMST-454, American Studies, Remembering Peal Harbor
+AMST-455, American Studies, Agency and Agenda: Commercial American Photography Since 1914
+AMST-456, American Studies, American Landscape Photography: Aesthetics and Ideology
+AMST-458, American Studies, Creating the New Right: The Conservative Movement in Post-World War II America
+AMST-461, American Globetrotters: Travel Writing and Tourism
+AMST-464, American Studies, Witnessing Slavery: Literature of Slavery and Abolition
+AMST-468, American Studies, American Labor and Cultural Politics
+AMST-470, American Studies, Native American Pictorial Narrative
+AMST-471, American Studies, Science Fiction and American Society
+AMST-473, American Studies, American Animation and Society
+AMST-800, American Studies, Archaeological Excavation
+AMST-801, American Studies, Approaches to American Studies
+AMST-802, American Studies, Primary Research Materials
+AMST-803, American Studies, Historiography and Historical Research
+AMST-804, American Studies, Women and Nature Preservation
+AMST-805, American Studies, American Literature: The Remix
+AMST-806, American Studies, Globalizing America
+AMST-807, American Studies, Identifying and Applying for Grants for Individuals and Institutions
+AMST-811, American Studies, Hartford Architecture 1790-1960
+AMST-819, American Studies, From Decorum to Sensation: Varieties of Museum and Archive Experience
+AMST-823, American Studies, The History of American Sports
+AMST-824, American Studies, Comic Art in America 1895-Present
+AMST-825, American Studies, "Museums, Visual Cultural and Critical Theory"
+AMST-826, American Studies, Nuclear America
+AMST-827, American Studies, Body Art in Fiction, Film, and Practice
+AMST-828, American Studies, New England and the Black Atlantic
+AMST-829, American Studies, Museum Studies: Minorities & Museums
+AMST-830, American Studies, Practicum in Museum Studies
+AMST-831, American Studies, "Scribbling Women: American Women's Literary Culture, 1850-1920"
+AMST-833, American Studies, The Work of Museums
+AMST-834, American Studies, Museum Representations of Native American Cultures
+AMST-835, American Studies, Museum Exhibition
+AMST-836, American Studies, Foundational Texts in American Studies
+AMST-837, American Studies, Women and the American Preservation Movement
+AMST-838, American Studies, America Collects Itself
+AMST-841, American Studies, Museology Meets the Museum
+AMST-843, American Studies, "Spectacle, Social Control, and the Spaces of Display"
+AMST-844, American Studies, The Gilded Age: 1865-1900
+AMST-849, American Studies, The Culture of Americanism in the 20th Century
+AMST-850, American Studies, "The Social Conscience and American Photography, 1839-1946"
+AMST-851, American Studies,  The World of Rare Books
+AMST-852, American Studies,  "Cultural Studies: Race, Nation, Culture-Remapping Modern American Fiction"
+AMST-853, American Studies, Agency and Agenda: Advertising the American Dream
+AMST-854, American Studies, Remembering Pearl Harbor
+AMST-855, American Studies, Viewing The Wire Through a Critical Lens
+AMST-856, American Studies, American Landscape Photography: Aesthetics and Ideology
+AMST-857, American Studies, Museums and Electronic Technologies
+AMST-858, American Studies, Creating the New Right: The Conservative Movement in Post-World War II America
+AMST-859, American Studies, "African Americans and Slavery, Freedom and Race in Connecticut and the North, 1650-1865"
+AMST-861, American Studies, American Globetrotters: Travel Writing and Tourism
+AMST-863, American Studies, America's Musical Landscape
+AMST-864, American Studies, Witnessing Slavery: Literature of Slavery and Abolition
+AMST-865, American Studies, Post-War/Postmodern: American Design from Retro to Neo-Retro
+AMST-865, American Studies, American Popular Music: Milestones of the 1920s-1950s
+AMST-867, American Studies, American Popular Music: Milestones of the 1950s-1990s
+AMST-868, American Studies, American Labor and Cultural Politics
+AMST-869, American Studies, America and The Memory of Europe
+AMST-870, American Studies, Native American Pictorial Narrative
+AMST-871, American Studies, Science Fiction and American Society
+AMST-872, American Studies, Museum Education
+AMST-873, American Studies, American Animation and Society
+AMST-868, American Studies, American Labor and Cultural Politics
+AMST-870, American Studies, National American Pictorial Narrative
+ANTH-101, Anthropology, Intro to Cultural Anthropology
+ANTH-207, Anthropology, Anthropology Perspective Women and Gender
+ANTH-213, Anthropology, The Meanings of Money
+ANTH-214, Anthropology, Modern Material Culture
+ANTH-215, Anthropology, Medical Anthropology
+ANTH-219, Anthropology, Anthropology of the Body
+ANTH-225, Anthropology, Indigenous Peoples of Far North
+ANTH-226, Anthropology, Culture and the Mind: Psychological Anthropology
+ANTH-227, Anthropology, Intro to Political Ecology
+ANTH-228, Anthropology, Anthropology from Margins/South Asia
+ANTH-230, Anthropology, Visual Anthropology
+ANTH-232, Anthropology, Native North American Cultures
+ANTH-237, Anthropology, Indigenous Social Movements in Latin America
+ANTH-238, Anthropology, Economic Anthropology
+ANTH-240, Anthropology, Public Anthropology
+ANTH-241, Anthropology, Women in the Caribbean
+ANTH-242, Anthropology, Anthropology of Latin America
+ANTH-244, Anthropology, Borderlands of East and SouthEast Asia
+ANTH-245, Anthropology, Anthropology and Global Health
+ANTH-247, Anthropology, China through Film
+ANTH-250, Anthropology,  Mobility and Sustainability
+ANTH-253, Anthropology, Urban Anthropology
+ANTH-254, Anthropology, The Meaning of Work
+ANTH-256, Anthropology, Anthropology of Reproduction
+ANTH-257, Anthropology, The Social Context of Health and Disease in Latin America
+ANTH-258, Anthropology, Environmental and Cultural Sustainability in Asia
+ANTH-270, Anthropology, Peoples of Sub-Saharan Africa
+ANTH-281, Anthropology, Anthropology of Religion
+ANTH-282, Anthropology, Women and Social Change in China
+ANTH-284, Anthropology, The Anthropology of Violence
+ANTH-291, Anthropology, "Observing the World: Culture, Power, Technology"
+ANTH-300, Anthropology, Junior Seminar
+ANTH-301, Anthropology, Ethnographic Methods and Writing
+ANTH-302, Anthropology, History of Anthropological Thought
+ANTH-303, Anthropology, Urban China
+ANTH-305, Anthropology, Identities in Britain and Ireland
+ANTH-206, Anthropology, Time and Culture
+ANTH-308, Anthropology, Anthropology of Place
+ANTH-309, Anthropology, "Culture, Ecology, and Environment"
+ANTH-310, Anthropology, Anthropology of Development
+ANTH-311, Anthropology, Cultural Diversities in Western Europe
+ANTH-313, Anthropology, "Indigenous Peoples, Ethnic Groups, and States"
+ANTH-330, Anthropology, Anthropology of Food
+ANTH-401, Anthropology, Advanced Seminar in Contemporary Anthropology
+ARAB-101, Arabic, Intensive Elementary Arabic I
+ARAB-201, Arabic, Intermediate Arabic I
+ARAB-301, Arabic, Intermediate Arabic III
+ARAB-401, Arabic, Advanced Arabic (Conv and Comp)
+BIOL-141, Biology, Global Perspective Biodiversty and Conserv
+BIOL-182, Biology, Evolution of Life
+BIOL-211, Biology, Electron Microscopy
+BIOL-215, Biology, Botany
+BIOL-224, Biology, Genetics
+BIOL-226, Biology, Recombinant DNA Technology
+BIOL-250, Biology, Genomics Research Seminar
+BIOL-317, Biology, Biochemistry
+BIOL-333, Biology, Ecology
+BIOL-403, Biology, Research Seminar
+BIOL-456, Biology, Biology of Communication
