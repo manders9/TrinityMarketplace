@@ -1,0 +1,13 @@
+  <h2>Listing Details</h2>
+
+  <ul>
+    <li><strong>Title:</strong> <%= @user_book.title %>
+    <li><strong>Author:</strong> <%= @user_book.author %></li>
+    <li><strong>Price:</strong>$<%= @user_book.price %></li>
+    <li><strong>Condition:</strong> <%= @user_book.condition %></li>
+    <li><strong>Description:</strong> <%= @user_book.description %></li>
+    <li><strong>Status:</strong> <%= @user_book.status %></li>
+  </ul>
+
+<p><%= link_to "List Another Book", new_user_book_path %></p>
+<p><%= link_to "All Books", user_books_path %></p>
