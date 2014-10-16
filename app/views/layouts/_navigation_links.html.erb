@@ -1,16 +1,13 @@
-  <% if !current_user %>
-    <li class="divider"></li>
-    <li class="has-form"><%= link_to "Sign in", new_user_session_path %></li>
-    <li class="divider"></li>
-    <li class="has-form"><%= link_to "Sign up", new_user_registration_path %></li>
+<% if !current_user %>
+  <li class="has-form"><%= link_to "Sign in", new_user_session_path %></li>
+  <li class="has-form"><%= link_to "Sign up", new_user_registration_path %></li>
   <%# else %>
     <%# if current_user.admin? %>
       <!-- <li class="divider"></li>
       <li class="has-form"> --><%#= link_to "View Users", admin_users_path %><!-- </li> -->
-    <% end %>
-    <% if current_user %>
-      <!-- <li class="divider"></li>
-      <li class="has-form"><%#= link_to "User Profile", user_path(current_user) %></li> -->
-    <li class="divider"></li>
-    <li class="has-form"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
   <% end %>
+  <% if current_user %>
+    <li class="has-form"><%= link_to "List a Book", new_user_book_path %></li>
+    <li class="has-form"><%= link_to "User Profile", user_path(current_user) %></li>
+    <li class="has-form"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+<% end %>
