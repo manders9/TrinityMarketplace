@@ -1,12 +1,4 @@
 <h2> Books for Sale </h2>
-<div class="row">
-  <% if user_signed_in? %>
-    <%= link_to "List a Book", new_user_book_path,
-        class: "button expand"  %>
-  <% else %>
-    <br>
-    <br>
-  <% end %>
 
 <ul>
 <% @user_books.each do |book| %>
