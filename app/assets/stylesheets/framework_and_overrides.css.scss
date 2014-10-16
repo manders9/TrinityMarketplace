@@ -89,6 +89,8 @@ section {
 .authform #error_explanation {
   @extend .alert-box;
   @extend .alert;
+  background-color: #f9d010;
+  border-color: #f9d010;
 }
 .authform #error_explanation h2 {
   font-size: rem-calc(16);
@@ -98,4 +100,15 @@ section {
   @extend .button;
   @extend .radius;
   @extend .tiny;
+}
+
+.button {
+  background-color: #002047
+}
+
+.error {
+  @extend .alert-box;
+  @extend .alert;
+  background-color: #f9d010;
+  border-color: #f9d010;
 }
