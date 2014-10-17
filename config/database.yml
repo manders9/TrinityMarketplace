@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: TrinityMarketplace_production
-  username: TrinityMarketplace
+  # username: TrinityMarketplace
   password: <%= ENV['TRINITYMARKETPLACE_DATABASE_PASSWORD'] %>

@@ -1,18 +1,7 @@
-<h2> Books for Sale </h2>
-
-<%= link_to "List a Book", new_user_book_path %>
+<h2 class="page-title"> Books for Sale </h2>
 
 <ul>
 <% @user_books.each do |book| %>
-  <li><%= book.title %>
-  <br><%= book.author %> - seller: <%= book.user.username %><br></li>
+  <li><%= book.title %> - <%= book.author %> - seller: <%= book.user.username %></li>
 <% end %>
 </ul>
-
-<% @users.each do |user| %>
-  <ul>
-    <li>
-      <%= user.username %> - <img src ="<%= user.profile_photo %>">
-    </li>
-  </ul>
-<% end %>
