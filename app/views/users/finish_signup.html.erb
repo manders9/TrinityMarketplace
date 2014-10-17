@@ -8,7 +8,7 @@
         <% end %>
       </div>
     <% end %>
-    <% if resource.email_verified? %>
+    <% if current_user.email_verified? %>
       <p class="help-block">Please create a password for your account.</p>
       <div class="form-group" "left">
       <%= f.label :password, class: "left"  %>
