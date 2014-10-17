@@ -39,7 +39,8 @@ class User < ActiveRecord::Base
         user = User.new(
           username: auth.info.nickname || auth.extra.raw_info.name,
           email: email ? email : "#{TEMP_EMAIL_PREFIX}-#{auth.uid}-#{auth.provider}.com",
-          password: Devise.friendly_token[0,20]
+          password: Devise.friendly_token[0,20],
+          # profile_photo: auth.info.image
         )
         # user.skip_confirmation!
         user.save!
@@ -56,5 +57,11 @@ class User < ActiveRecord::Base
 
   def email_verified?
     self.email && self.email !~ TEMP_EMAIL_REGEX
+  end
+
+  private
+
+  def set_default_role
+    add_role :user
   end
 end
