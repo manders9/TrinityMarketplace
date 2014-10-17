@@ -1,0 +1,47 @@
+<div class="authform">
+  <h1>Add Password</h1>
+  <%= form_for(current_user, as: "user", url: finish_signup_path(current_user), html: { role: "form"}) do |f| %>
+    <% if @show_errors && current_user.errors.any? %>
+      <div id="error_explanation">
+        <% current_user.errors.full_messages.each do |msg| %>
+          <%= msg %><br>
+        <% end %>
+      </div>
+    <% end %>
+    <% if resource.email_verified? %>
+      <p class="help-block">Please create a password for your account.</p>
+      <div class="form-group" "left">
+      <%= f.label :password, class: "left"  %>
+      <small class="right">8 characters minimum</small>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Continue", class: "button" %>
+    </div>
+  <% end %>
+  <% else %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <div class="controls">
+      <%= f.text_field :email, autofocus: true, value: "", class: "form-control input-lg", placeholder: "Example: email@me.com" %>
+      <p class="help-block">Please confirm your email address.</p>
+    </div>
+    <div class="form-group" "left">
+      <%= f.label :password, class: "left"  %>
+      <small class="right"><%= @minimum_password_length %> characters minimum</small>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Continue", class: "button" %>
+    </div>
+  <% end %>
+  <% end %>
+</div>
