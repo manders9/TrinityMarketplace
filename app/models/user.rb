@@ -1,20 +1,19 @@
 class User < ActiveRecord::Base
   has_many :user_books, dependent: :destroy
 
-  TEMP_EMAIL_PREFIX = 'change@me'
+  TEMP_EMAIL_PREFIX = "change@me"
   TEMP_EMAIL_REGEX = /\Achange@me/
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable,
-         :validatable, :omniauthable
+         :validatable, :omniauthable, :confirmable
 
   validates_uniqueness_of :username
   validates_format_of :email, without: TEMP_EMAIL_REGEX, on: :update
   mount_uploader :profile_photo, ProfilePhotoUploader
 
   def self.find_for_oauth(auth, signed_in_resource = nil)
-
     # Get the identity and user if they exist
     identity = Identity.find_for_oauth(auth)
 
