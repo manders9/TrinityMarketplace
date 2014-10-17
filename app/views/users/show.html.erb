@@ -1,0 +1,54 @@
+<div class="row">
+  <% if @user.profile_photo = nil %>
+    <div class="small-10 small-centered column">
+    <ul class="no-bullet">
+      <li><h2><%= @user.username.upcase %></h2></li>
+      <li><%= @user.email %></li>
+      <li><%= link_to "Edit Info", edit_user_registration_path %></li>
+    </ul>
+  </div>
+  <% else %>
+  <div class="small-2 small-centered column">
+    <img src="<%= @user.profile_photo %>"></img>
+  </div>
+  <div class="small-10 small-centered column">
+    <ul class="no-bullet">
+      <li><h2><%= @user.username.upcase %></h2></li>
+      <li><%= @user.email %></li>
+      <li><%= link_to "Edit Info", edit_user_registration_path %></li>
+    </ul>
+  </div>
+</div>
+  <% end %>
+</div>
+<div class="row">
+  <h4 class="left">Your Book Listings:</h4>
+  <ul class="no-bullet">
+    <% @user_books.each do |book| %>
+      <li id="<%= "user_book.title" %>">
+        <div class="row panel">
+          <div class="small-2 column">
+            <ul class="no-bullet">
+              <li>
+                <%= link_to "Edit",
+                  edit_user_book_path(book) %>
+                 | <%= link_to "Delete",
+                    user_path(@user),
+                    method: :delete,
+                    data: { confirm:
+                            "Are you sure?"
+                            } %>
+              </li>
+            </ul>
+          </div>
+          <div class="small-8 column">
+            <p><%= book.author %></p>
+            <p><%= book.condition %></p>
+            <p><%= book.description %></p>
+            <p><%= book.price %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  <ul>
+</div>
