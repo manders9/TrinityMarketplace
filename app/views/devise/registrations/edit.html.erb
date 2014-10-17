@@ -13,7 +13,7 @@
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
     </div>
-      <p>Leave these fields blank if you don"t want to change your password.</p>
+      <p>Leave these fields blank if you don't want to change your password.</p>
       <div class="form-group">
         <%= f.label :password %>
         <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
@@ -31,9 +31,9 @@
         <%= f.label :profile_photo %>
         <%= f.file_field :profile_photo, class: "form-control" %>
       </div>
-    <div class="text-center"><%= f.submit "Update", class: "button"%></div>
+    <div class="text-center"><%= f.submit 'Update', class: 'button'%></div>
     <div class="text-center">
-      <label>Unhappy? We"ll be sad to see you go.</label>
+      <label>Unhappy? We'll be sad to see you go.</label>
       <label><strong><%= link_to "Cancel My Account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></strong></label>
     </div>
   <% end %>

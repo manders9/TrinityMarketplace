@@ -36,4 +36,6 @@ class UsersController < ApplicationController
       accessible << [ :password, :password_confirmation ] unless params[:user][:password].blank?
       params.require(:user).permit(accessible)
     end
+=======
+>>>>>>> 0fd7b2e42141cce50772ffe82ebb414185ef97b1
 end
