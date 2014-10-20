@@ -6,21 +6,22 @@ class UserBooksController < ApplicationController
   end
 
   def show
-    @user_book = UserBook.find(params[:id])
+    @user_book = UserBook.find(params[:book_id])
   end
 
   def new
+    @book = Book.find(params[:book_id])
     @user_book = UserBook.new
   end
 
   def create
+    @book = Book.find(params[:book_id])
     @user_book = UserBook.new(user_book_params)
+    @user_book.book_id = params[:book_id]
 
     if @user_book.save
-      redirect_to user_book_path(@user_book),
+      redirect_to "/books/#{@user_book.book_id}",
         notice: "Book successfully added."
-
-      # UserMailer.book_email(@user_book).deliver
     else
       render :new
     end
@@ -34,7 +35,7 @@ class UserBooksController < ApplicationController
     @user_book = UserBook.find(params[:id])
 
     if @user_book.update(user_book_params)
-      redirect_to user_book_path(@user_book),
+      redirect_to "/books/#{@user_book.book_id}/user_books/#{@user_book.id}",
         notice: "Book successfully updated."
     else
       render "edit"
@@ -53,8 +54,7 @@ class UserBooksController < ApplicationController
   def user_book_params
     params.require(:user_book).permit(
       :user,
-      :title,
-      :author,
+      :book,
       :condition,
       :price
       ).merge(user: current_user)
