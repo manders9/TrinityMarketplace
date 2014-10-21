@@ -23,6 +23,8 @@
 </div>
 <div class="row">
   <h4 class="left">Your Book Listings:</h4>
+</div>
+<div class="row">
   <ul class="no-bullet">
     <% @user_books.each do |book| %>
       <li id="<%= "user_book.title" %>">
@@ -30,9 +32,9 @@
           <div class="small-2 column">
             <ul class="no-bullet">
               <li>
-                <%= link_to "Edit",
+                <%#= link_to "Edit",
                   edit_user_book_path(book) %>
-                 | <%= link_to "Delete",
+                  <%#= link_to "Delete",
                     user_path(@user),
                     method: :delete,
                     data: { confirm:
@@ -40,15 +42,13 @@
                             } %>
               </li>
             </ul>
-          </div>
-          <div class="small-8 column">
-            <p><%= book.author %></p>
-            <p><%= book.condition %></p>
-            <p><%= book.description %></p>
-            <p><%= book.price %></p>
+          <div class="small-12 column">
+            <p class="text-left">Price: $<%= book.price %>0</p>
+            <p class="text-left">Condition: <%= book.condition %></p>
+            <p class="text-left"><%= book.description %></p>
+            <p class="text-left"><%= book.status %></p>
           </div>
         </div>
-      </li>
     <% end %>
   <ul>
 </div>
