@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141016152229) do
+ActiveRecord::Schema.define(version: 20141020173402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "books", force: true do |t|
+    t.string   "course",     null: false
+    t.string   "ISBN",       null: false
+    t.string   "title",      null: false
+    t.string   "author",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "identities", force: true do |t|
     t.integer  "user_id"
@@ -28,16 +37,16 @@ ActiveRecord::Schema.define(version: 20141016152229) do
 
   create_table "user_books", force: true do |t|
     t.integer  "user_id",                             null: false
-    t.string   "title",                               null: false
-    t.string   "author",                              null: false
     t.string   "condition",                           null: false
     t.text     "description"
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "price",       precision: 8, scale: 2, null: false
+    t.integer  "book_id",                             null: false
   end
 
+  add_index "user_books", ["book_id"], name: "index_user_books_on_book_id", using: :btree
   add_index "user_books", ["user_id"], name: "index_user_books_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
