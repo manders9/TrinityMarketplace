@@ -1,6 +1,7 @@
 // import the CSS framework
 @import "foundation";
 
+
 .top-bar {
   background-color: #002047;
 }
@@ -12,6 +13,14 @@
 .page-title {
   color: #002047;
 }
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
