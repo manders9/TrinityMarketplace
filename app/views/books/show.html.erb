@@ -1,0 +1,45 @@
+<div>
+  <div>
+    <h1><%= @book.title %></h1>
+  </div>
+  <div class="small-10 column">
+    <h3 class="text-left subheader">
+      ISBN: <%= @book.ISBN %><br>
+      Author: <%= @book.author %>
+    </h3>
+    <div class="text-left">
+      <%= link_to "List this Book", new_book_user_book_path(@book) %>
+    </div>
+    <h3 class="text-left">Books for Sale:</h3>
+
+    <ul class="no-bullet">
+    <% @user_books.each do |book| %>
+      <li id="<%= "user_book.title" %>">
+        <div class="row panel">
+          <div class="small-2 column">
+            <ul class="no-bullet">
+              <li>
+                <%#= link_to "Edit",
+                  edit_book_user_book_path(book) %>
+                  <%#= link_to "Delete",
+                    user_path(@user),
+                    method: :delete,
+                    data: { confirm:
+                            "Are you sure?"
+                            } %>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 column">
+            <p class="text-left">Contact Seller: <%= mail_to book.user.email %></p>
+            <p class="text-left">Price: $<%= book.price %>0</p>
+            <p class="text-left">Condition: <%= book.condition %></p>
+            <p class="text-left"><%= book.description %></p>
+            <p class="text-left"><%= book.status %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </div>
+</div>
+</div>

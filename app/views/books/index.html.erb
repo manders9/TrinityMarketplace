@@ -1,0 +1,25 @@
+<h2>Course Books</h2>
+
+<div class="row">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <%= form_tag(books_path, method: "get", id: "search_form") do %>
+          <div class="small-10 columns">
+            <%= text_field_tag :search, params[:search] %>
+          </div>
+          <div class="small-2 columns">
+            <%= submit_tag "Search", name: nil, class: "button postfix" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+<% @books.each do |book| %>
+  <ul>
+    <li>
+      <%= book.course %> - <%= link_to book.title, book_path(book) %>
+    </li>
+  </ul>
+<% end %>
+

@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require "csv"
+
+CSV.foreach("db/data/books.csv", headers: true) do |row|
+  Book.find_or_create_by(row.to_hash)
+end
