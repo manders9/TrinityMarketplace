@@ -16,10 +16,11 @@
   </div>
 
 <% @books.each do |book| %>
-  <ul>
+  <ul class="no-bullet">
     <li>
       <%= book.course %> - <%= link_to book.title, book_path(book) %>
     </li>
   </ul>
 <% end %>
+<%= paginate @books %>
 
